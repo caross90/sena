@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS registrosApi;
+
+USE registrosApi;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_usuario VARCHAR(80) NOT NULL UNIQUE,
+    contraseña VARCHAR(100) NOT NULL
+);
